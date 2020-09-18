@@ -1,4 +1,4 @@
-html, body, div, article, p, h3, h4 {
+html, body, .albumCover, .albumCover__artikel, .albumCover__h3, .albumCover__h4{
     padding: 0;
     margin: 0;
 }
@@ -31,7 +31,7 @@ html{
     position: relative;
 }
 
-.albumCover article {
+.albumCover__artikel {
     position: relative;
     background-color: rgba(255,255,255,0.5);
     height: 300px;
@@ -41,7 +41,7 @@ html{
     /* animation: naar-beneden 1s forwards; */
 }
 
-.albumCover:hover article {
+.albumCover:hover .albumCover__artikel {
     margin-top: -305px;
     cursor: pointer;
     /* animation: naar-boven .8s forwards; */
@@ -65,19 +65,19 @@ html{
     20%, 40%, 60%, 80%, 100% {margin-top: -308px;}
 }
 
-.albumCover article h3, .albumCover article h4, .albumCover article p {
+.albumCover__artikel .albumCover__h3, .albumCover__artikel .albumCover__h4{
     padding: .3em;
 }
 
-.albumCover img {
+.albumCover__img {
     max-width: 100%;
     width: 300px;
 }
 
-.naarBoven article {
+.naarBoven .albumCover__artikel {
     animation: naar-boven 1s forwards;
 }
 
-.naarBeneden article {
+.naarBeneden .albumCover__artikel {
     animation: naar-beneden 1s forwards;
 }
